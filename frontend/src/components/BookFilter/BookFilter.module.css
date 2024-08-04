@@ -1,0 +1,50 @@
+.container {
+  background-color: #eeeeee;
+  grid-column: 2;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.container form {
+  /* display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 30px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container form > input[type='text'] {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  width: 200px;
+}
+
+.container form > label > input[type='checkbox'] {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.container form > label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.container form button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #222831;
+  border: none;
+  border-radius: 8px;
+  color: #eeeeee;
+  cursor: pointer;
+}
