@@ -1,0 +1,42 @@
+@use "../../styles/mixins/media" as *;
+
+.container {
+  background-color: var(--color-background-secondary);
+  border-radius: var(--border-radius);
+  padding: 20px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 5px;
+      font-size: 20px;
+
+      input {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

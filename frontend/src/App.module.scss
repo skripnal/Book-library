@@ -1,0 +1,26 @@
+@use "./styles/mixins/media" as *;
+
+.App {
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding-top: 100px;
+
+  @include tabletAndMobile {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include tabletAndMobile {
+      gap: 20px;
+    }
+  }
+}
